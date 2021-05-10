@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+</style> 
+</head>
+<body>
+ <fieldset>
+<Font size="+4 " color=black>HOTEL BOOKING</font>
+<form method=post action="prac.html">
+<br>
+<table>
+<tr>
+<td>Name</td>
+<td><input type=text name=fn placeholder="First Name"></td>
+<td><input type=text name=ln placeholder="Last Name"></td>
+</tr><tr>
+<td>Number of Guests</td>
+<td><input type=text name=EI placeholder="No. of People"></td>
+</tr><tr>
+<td>Room Type</td>
+<td><input type=radio name=initial checked>Standard Room (1 to 2 People)</td>
+</tr><tr>
+<td></td>
+<td><input type=radio name=initial>Family Room (1 to 4 People)</td>
+</tr><tr>
+<td></td>
+<td><input type=radio name=initial>Private Room (1 to 3 People)</td>
+</tr><tr>
+<td></td>
+<td><input type=radio name=initial>Mix Dorm Room (6 People)</td>
+</tr><tr>
+<td>
+<label for="birthday">Arrival date</label></td>
+<td><input type="date" id="birthday" name="birthday">
+</td>
+</tr><tr>
+<TD>
+<label for="birthday">Departure date</label></td>
+<td><input type="date" id="birthday" name="birthday">
+</td>
+</tr><tr>
+<td>Select Hotel</td>
+<td><select name=department>
+<option value=" Department"> Select your hotel choice
+<option value="PR Department">ROYAL DARBAR
+<option value="HR Department">CLARK INN
+<option value="IT Department">PRESIDENT HOTEL
+<option value="Marketing Department">HOTEL BABINA
+<option value="Maintenance Department">RADISSON BLUE
+<option value="Service Department">SHIVOY
+<option value="Customer Care Department">RADIANT RESORT
+<option value="Concultancy Department">DEVINE PALACE
+</select>
+</td>
+</tr><tr>
+<td>Free Pickup?</td>
+<td><input type=radio name=lk value=yes>Yes Please! - Pick me up on arrival</td>
+</tr><tr>
+<td></td>
+<td><input type=radio name=lk value=no>No Thanks - I'll make my own way there</td>
+</tr><tr>
+<td>Mobile</td>
+<td><input type=text name=mob placeholder="+91"></td>
+</tr><tr>
+<td>E-Mail</td>
+<td><input type=text name=email size=28></td>
+</tr><tr>
+<td>Special Request</td>
+<td><textarea name=add rows=5 cols=40 placeholder="Optional"
+wrap></textarea></td>
+</tr><tr>
+<td></td>
+<td><input type=submit value=submit style=background-color:green;>&nbsp;<input type=reset
+value=reset style=background-color:grey;></td>
+</table>
+</fieldset>
+</form>
+<button style=background-color:YELLOW;  onclick="window.location.href='7p.html'">BACK</button>
+</body>
+</html>

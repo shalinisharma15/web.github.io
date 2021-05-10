@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:brown;
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.container {
+  position: relative;
+  max-width: 90000px;
+  margin: 0 auto;
+}
+.container img {vertical-align: middle;}
+.container .content {
+  position: absolute;
+  TOP: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #ffffff;
+  width: 100%;
+  padding: 0px;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a  href="index.html">Home</a>
+  <a  href="4p.html">About Gorakhpur</a>
+  <a href="3p.html">Culture & Heritage</a>
+  <a href="5p.html">Tourist Places</a>
+  <a href="8p.html">Plan Your Trip </a>  
+  <a class="active"href="7p.html">Hotel Booking</a>
+ <div class="dropdown">
+    <button class="dropbtn">Gallery 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="2p.html">Photo Gallery</a>
+      <a href="10.html">Video Gallery</a>
+    </div>
+  </div>
+ <div class="dropdown">
+    <button class="dropbtn">MORE 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="9p.html">EVENTS</a>
+      <a href="14p.html">TRANSPORT</a>
+      <a href="15p.html">MAP</a>
+      <a href="13p.html">FAQ</a>
+      <a href="6p.html">CONTACT US</a>
+    </div>
+  </div>    
+</div>
+
+<h1>HOTELS BOOKING</h1>
+<button style=HEIGHT:50PX;  onclick="window.location.href='16p.html'">"BOOK YOUR ROOM"</button>
+<hr>
+<div class="row">
+  <div class="column">
+    <img src="hotel.jpg"style="width:100%; height:150px">
+  </div>
+  <div class="column">
+    <img src="room.jpg"style="width:100%; height:150px">
+  </div>
+  <div class="column">
+    <img src="18.jpg"style="width:100%; height:150px">
+  </div>
+  <div class="column">
+    <img src="rr1.jpg"style="width:100%; height:150px">
+  </div>
+ <div class="column">
+    <img src="lounge.jpg"style="width:100%; height:150px">
+  </div>
+  <div class="column">
+    <img src="16.jpg"style="width:100%; height:150px">
+  </div>
+</div>
+<h2>PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('hotels')"> HOTELS </button>
+  <button class="btn" onclick="filterSelection('resorts')">RESORTS</button>
+  <button class="btn" onclick="filterSelection('restaurants')">RESTAURANTS </button>
+ <button class="btn" onclick="filterSelection('cafe')">CAFE</button>
+</div>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column resorts">
+    <div class="content">
+      <img src="rr1.jpg" style="width:100%">
+      <h4>Radiant Resort</h4>
+      <p>Great option for travellers looking out for resort</p>
+    </div>
+  </div>
+  <div class="column hotels">
+    <div class="content">
+    <img src="shiv.jpg" style="width:100%">
+      <h4>Hotel Shivoy</h4>
+      <p>An Indian on-site restaurant awaits you at Shivoy Hotel</p>
+    </div>
+  </div>
+  <div class="column hotels">
+    <div class="content">
+    <img src="hotel.jpg" style="width:100%">
+      <h4>Hotel Clark Inn</h4>
+      <p>Clarks Inn The 5-star Grand hotel offers comfort and convenience.</p>
+    </div>
+  </div>
+  <div class="column hotels">
+    <div class="content">
+    <img src="pr.jpg" style="width:100%">
+      <h4>Hotel President</h4>
+      <p>heart of Gorakhpur,offers comfort and convenience </p>
+    </div>
+  </div>
+  <div class="column restaurants">
+    <div class="content">
+      <img src="olive.jpg" alt="Car" style="width:100%">
+      <h4>Olive Garden Restaurant</h4>
+      <p>Family Restaurant Olive garden</p>
+    </div>
+  </div>
+  <div class="column restaurants">
+    <div class="content">
+    <img src="lounge.jpg" alt="Car" style="width:100%">
+      <h4>Exhale lounge & cafe </h4>
+      <p> Chinese,  Continental Cuisine Restaurant</p>
+    </div>
+  </div>
+  <div class="column cafe">
+    <div class="content">
+    <img src="10park.jpg" style="width:100%">
+      <h4>10 Park Street cafe</h4>
+      <p>10 Park Street cafe,Restaurant & Banquet Hall</p>
+    </div>
+  </div>
+  <div class="column cafe">
+    <div class="content">
+    <img src="18.jpg" style="width:100%">
+      <h4>Silver Spoon cafe</h4>
+      <p>Silver Spoon cafe,Restaurant & Banquet Hall</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<hr STYLE="background-color:#000000; height:10px; width:100%; border-bottom=50px">
+<div class="container">
+  <img src="gk.jpg" style="width:100%; height:150px">
+  <div class="content">
+<center>
+<BR><BR><BR><BR><BR><BR><BR>
+  <h3>copyright © 2021</h3>
+  <h4>Content Owned by Admin@Shalini<br>
+   ©Ministry Of Electronics & Information Technology,Government Of India</h4>
+<footer class="footer-distributed">
+<H3>-QUICK LINKS-</H3>
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					·
+					<a href="2p.html">gallery</a>
+					·
+					<a href="3p.html">Culture</a>
+					·
+					<a href="4p.html">About</a>
+					·
+					<a href="13p.html">faq</a>
+					·
+					<a href="6p.html">Contact</a>
+				</p>
+				<p class="WELCOME ">GORAKHPUR TOURISM © 2021</p>
+				<p>Contact Us</p>
+				<form action="#" method="post">
+					<input type="text" name="email" placeholder="Email"><BR><BR>
+					<textarea name="message" placeholder="Message"></textarea>
+					<BR>
+					<button>Send</button>
+				</form>
+		</footer> 
+  </div>
+</div>
+</body>
+</html>
+
+

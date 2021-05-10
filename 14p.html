@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:brown;
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.container {
+  position: relative;
+  max-width: 90000px;
+  margin: 0 auto;
+}
+.container img {vertical-align: middle;}
+.container .content {
+  position: absolute;
+  TOP: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #ffffff;
+  width: 100%;
+  padding: 0px;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a  href="index.html">Home</a>
+  <a  href="4p.html">About Gorakhpur</a>
+  <a href="3p.html">Culture & Heritage</a>
+  <a href="5p.html">Tourist Places</a>
+  <a href="8p.html">Plan Your Trip </a>  
+  <a class="active"href="7p.html">Hotel Booking</a>
+ <div class="dropdown">
+    <button class="dropbtn">Gallery 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="2p.html">Photo Gallery</a>
+      <a href="10.html">Video Gallery</a>
+    </div>
+  </div>
+ <div class="dropdown">
+    <button class="dropbtn">MORE 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="9p.html">EVENTS</a>
+      <a href="14p.html">TRANSPORT</a>
+      <a href="15p.html">MAP</a>
+      <a href="13p.html">FAQ</a>
+      <a href="6p.html">CONTACT US</a>
+    </div>
+  </div>    
+</div>
+
+<h1>TRAVEL GUIDE</h1>
+<hr>
+<div class="row">
+  <div class="column">
+    <img src="a3.jpg"style="width:100%; height:150px">
+  </div>
+  <div class="column">
+    <img src="travel.jpg"style="width:100%; height:150px">
+  </div>
+  <div class="column">
+    <img src="car.jpg"style="width:100%; height:150px">
+  </div>
+  <div class="column">
+    <img src="a1.jpg"style="width:100%; height:150px">
+  </div>
+ <div class="column">
+    <img src="travel1.jpg"style="width:100%; height:150px">
+  </div>
+  <div class="column">
+    <img src="bus.jpg"style="width:100%; height:150px">
+  </div>
+</div>
+<p>Gorakhpur has a well-developed local transportation system. There are many city buses that run along the major roads within the city. These form a common mode of transportation in Gorakhpur, for residents and visitors alike. Many interstate buses to Gorakhpur also have halts at the major attractions in the city. So, travellers can also make use of such buses, to get around in Gorakhpur.</p>
+<h2>MODE OF TRANSPORTATION</h2>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column resorts">
+    <div class="content">
+      <img src="bus.jpg" style="width:100%">
+      <h4>Gorakhpur Bus Station</h4>
+      <p>Bus Station Is there to provide you convenient transportation.you can come here via bus route</p>
+    </div>
+  </div>
+  <div class="column resorts">
+    <div class="content">
+      <img src="travel1.jpg" style="width:100%">
+      <h4>Gorakhpur Railway Station</h4>
+      <p>Railway Station has is you can have journey via rail route to gorakhpur.</p>
+    </div>
+  </div>
+  <div class="column resorts">
+    <div class="content">
+      <img src="car.jpg" style="width:100%">
+      <h4>Taxi Services</h4>
+      <p>Gorakhpur Taxi Services is there for you can have journey via road to gorakhpur.</p>
+    </div>
+  </div>
+  <div class="column resorts">
+    <div class="content">
+      <img src="a1.jpg" style="width:100%">
+      <h4>Gorakhpur Airport</h4>
+      <p>Gorakhpur Airport has is there for you can have journey across border via airways  to gorakhpur.</p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<h2>By plane</h2>
+<p> Gorakhpur Airport (GOP IATA). Alliance Air from Delhi; SpiceJet from Bangalore, Delhi, Mumbai; IndiGo from Bangalore, Delhi, Kolkata, Hyderabad Gorakhpur Airport (Q970413) on Wikidata Gorakhpur Airport on Wikipedia (updated Oct 2019 | edit)</p>
+<h2>By train</h2>
+<p>1.Gorakhpur railway station connects to all major cities of India. It is the headquarters of North Eastern Railway. Direct trains connect it to Mumbai, Delhi, Kolkata, Lucknow, Kanpur, Varanasi and other cities. it has the longest train platform in the world.</p>
+
+<p>2. Gorakhpur Junction railway station. With a platform 1.36 kilometres (0.85 mi) long, this station has one of the longest platforms in the world. Gorakhpur Junction railway station (Q12424650) on Wikidata Gorakhpur Junction railway station on Wikipedia (updated Jun 2019 | edit)</p>
+<p>3. Gorakhpur Cantonment railway station. Gorakhpur Cantonment railway station (Q18619210) on Wikidata Gorakhpur Cantonment railway station on Wikipedia (updated Oct 2019 | edit)</p>
+<h2>By car</h2>
+
+<p>A road in Gorakhpur
+Gorakhpur falls on NH 28 and 29. The roadways network connects Gorakhpur to the cities of Uttar Pradesh and to other cities of India. Some important distances are: Lucknow 276 km, Varanasi 231 km, Allahabad 339 km, Agra 624 km, Delhi 783 km and Mumbai 1690 km.
+
+On the basin of rivers Rapti and Rohini, Gorakhpur City has the geographical shape of a bowl. The west of the city is guarded by cool Rapti river, while the east is associated with Sal Forest. The south has greenish Ramgarh Tal, and north is the plinth of city's advancement.
+
+Gorakhpur city is the headquarters of North Eastern Railways. You can travel to any corner of India from here. It also has an airport for domestic travel and connects with every major city in India. The city boasts of an army cantonment and an air base. All this gives a cosmopolitan touch to the city. The world-famous publication house of Gita Press gives an intellectual and religious touch to the city.
+
+When visiting Gorakhpur, you can use some of these car rental services in Gorakhpur:</p>
+<ul>
+<li>Bharat Taxi ☏ +91 9696000999.</li>
+<li>Maxi Taxi ☏ +91 9555240025.</li>
+<li>Musafir Cabs ☏ +91 9838001880.</li>
+<li>Oyee Cabs ☏ +91 8808826666.</li>
+<li>Savaari ☏ +91 9045450000.</li>
+<li>eTaxiGo ☏ +91 8376996666.</li>
+<li>Zeo Taxi ☏ +91 7275495696.</li>
+</ul>
+<h4>Cycle rickshaw</h4> <p>a three-wheeled, human-powered cycle, is the major mode of transport in the city. The charges are nominal and can be bargained. Usually a ride of 1-2 km would cost around ₹15. City bus are available for some important routes of city.</p>
+
+<h4>Auto rickshaws</h4> <p>are easily available for traveling to some parts in the city.</p>
+
+<h4>Taxicabs</h4> can be hired for a fixed time duration as desired by the user.
+<hr STYLE="background-color:#000000; height:10px; width:100%; border-bottom=50px">
+<div class="container">
+  <img src="gk.jpg" style="width:100%; height:150px">
+  <div class="content">
+<center>
+<BR><BR><BR><BR><BR><BR><BR>
+  <h3>copyright © 2021</h3>
+  <h4>Content Owned by Admin@Shalini<br>
+   ©Ministry Of Electronics & Information Technology,Government Of India</h4>
+<footer class="footer-distributed">
+<H3>-QUICK LINKS-</H3>
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					·
+					<a href="2p.html">gallery</a>
+					·
+					<a href="3p.html">Culture</a>
+					·
+					<a href="4p.html">About</a>
+					·
+					<a href="13p.html">faq</a>
+					·
+					<a href="6p.html">Contact</a>
+				</p>
+				<p class="WELCOME ">GORAKHPUR TOURISM © 2021</p>
+				<p>Contact Us</p>
+				<form action="#" method="post">
+					<input type="text" name="email" placeholder="Email"><BR><BR>
+					<textarea name="message" placeholder="Message"></textarea>
+					<BR>
+					<button>Send</button>
+				</form>
+		</footer> 
+  </div>
+</div>
+</body>
+</html>
+
+
